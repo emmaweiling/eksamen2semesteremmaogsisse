@@ -1,0 +1,1353 @@
+/*GENERELLE REGLER*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    border-top: 1px;
+}
+
+.pilop {
+    width: 3.5%;
+    top: 200px;
+    display: block;
+    margin: auto;
+    padding-top: 7%;
+}
+
+
+/*HOVEREFFEKT PÅ LINKS */
+
+/*http://www.udvikleren.dk/artikler/168/css-link-og-hover/ */
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+
+/*TEKST*/
+
+h1 {
+    font-size: 24px;
+    padding-top: 6%;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+p,
+ol {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol {
+    color: #555454;
+}
+
+
+
+.forsidetekst {
+    padding: 15% 0%;
+}
+
+#forsidetekst h1 {
+    font-size: 30px;
+}
+
+#forsidetekst h2 {
+    margin: 7%;
+    font-family: Roboto Slab;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+
+.forsidetekstp {
+    margin-bottom: 3%;
+}
+
+.fordig {
+    padding: 4% 0%;
+}
+
+
+
+/*BANNER*/
+
+.mini-banner {
+    background-color: #92C4D6;
+    height: auto;
+    text-align: center;
+    display: block;
+}
+
+.mini-banner p {
+    font-size: 14px;
+    margin: auto;
+    padding: 4% 3%;
+    color: white;
+}
+
+/*NAVIGATION - responsiv med flexbox*/
+
+#logo-burger {
+    display: flex;
+    color: white;
+}
+
+
+#logo-burger a {
+    margin-right: auto;
+    width: 100px;
+}
+
+#main-nav {
+    padding-top: 5%;
+    display: flex;
+    margin-right: .5em;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+#main-nav a:hover {
+    color: #92C4D6;
+}
+
+
+
+/*Denne skjuler burgermenuens checkbox som aktiverer toggle funktionen*/
+.hidden {
+    display: none;
+}
+
+.graboks {
+    background-color: #F3F3F3;
+    padding: 2% 7.5%
+}
+
+.graboksforside {
+    background-color: #F3F3F3;
+}
+
+.graboks1 {
+    padding: 7% 7%;
+    margin: 4% 0%;
+}
+
+/*HERO IMAGE*/
+
+#forsidetekst {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.teksthvid {
+    color: white;
+}
+
+.prperson {
+    font-weight: 500;
+    width: 100%;
+    margin-left: 4%
+}
+
+#aktivitettekst1 {
+    color: white;
+    font-weight: 600;
+}
+
+#aktivitettekst2 {
+    color: white;
+}
+
+/* Oprettet af Morten */
+
+.moab {
+    height: 500px;
+    background-image: url(../images/forsidemobil.png);
+    /* Prøv at ændre "cover" til "100% 100%" */
+    /* Det vil gøre billedet responsivt */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moab1 {
+    height: 500px;
+    background-image: url(../images/aktivitetmobil.png);
+    /* Prøv at ændre "cover" til "100% 100%" */
+    /* Det vil gøre billedet responsivt */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moab2 {
+    height: 500px;
+    background-image: url(../images/hikingmobil.png);
+    /* Prøv at ændre "cover" til "100% 100%" */
+    /* Det vil gøre billedet responsivt */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moab3 {
+    height: 500px;
+    background-image: url(../images/omrasmusmobil.png);
+    /* Prøv at ændre "cover" til "100% 100%" */
+    /* Det vil gøre billedet responsivt */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.moab4 {
+    height: 500px;
+    background-image: url(../images/udforsksite.jpg);
+    /* Prøv at ændre "cover" til "100% 100%" */
+    /* Det vil gøre billedet responsivt */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*BAGGRUNDSBILLEDE SLUT*/
+
+
+
+/*4 BOKSE FORSIDE*/
+
+.flexbox1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+}
+
+/*6 BOKSE AKTIVITETSSIDE*/
+
+.flexbox2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4%;
+}
+
+
+/*KNAPPER*/
+
+.jsx-889638884 {
+    fill: currentColor;
+    height: 13px;
+    width: 15px;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+.button1 {
+    background-color: #92C4D6;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    width: 125px;
+    font-weight: 700;
+}
+
+.button2 {
+    background-color: #92C4D6;
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    font-weight: 700;
+
+}
+
+.button1:hover {
+    background-color: #9FD5E8;
+}
+
+.button2:hover {
+    background-color: #9FD5E8;
+}
+
+.bundlasmere {
+    margin-bottom: 10%;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.bundlasmere:hover {
+    color: #92c4d6;
+}
+
+.lasmere {
+    margin-top: -3px;
+}
+
+/* PRIS BOKSE */
+
+.pris {
+    display: flex;
+    background-color: #F3F3F3;
+}
+
+.prisboks h2 {
+    padding-top: 8%;
+}
+
+
+/* API VEJR */
+
+#temp,
+#temp1,
+#temp2,
+#temp3 {
+    margin-left: 10%;
+    font-size: 30px;
+    line-height: 28px;
+    color: #4d4d4d;
+    font-weight: 200;
+}
+
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+.vejr {
+    background-color: white;
+    width: 49%;
+    margin-bottom: 1%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.vejr:hover {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.vejr h2 {
+    font-size: 17px;
+    margin-left: 10%;
+    color: #4d4d4d;
+    font-weight: 500;
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+
+.ikonvejr {
+    width: 40%;
+    margin-left: 55%;
+    margin-top: -5%;
+}
+
+/*FORSIDE VIDEO*/
+
+
+#forsidevideo {
+    width: 100%;
+}
+
+
+/*GRÅ BOKSE*/
+
+ol {
+    margin-left: -22px;
+}
+
+
+.graboks2 h4 {
+    text-align: center;
+}
+
+.graboks1 {
+    background-color: #f3f3f3;
+}
+
+.graboks2 {
+    background-color: #f3f3f3;
+}
+
+.grabokshiking {
+    padding: 6%;
+    background-color: #f3f3f3;
+    margin-right: 1%;
+}
+
+.grabokshiking {
+    background-color: #f3f3f3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+
+.graboksforside {
+    padding: 7% 8%;
+    margin: 18% 0%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+/*IKONER I HIKINGBOKSE*/
+
+
+.ikonflexbox {
+    display: flex;
+}
+
+/*Udforsk side*/
+
+#infoflexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#infoflexbox img {
+    width: 98%;
+}
+
+/*FOOTER*/
+
+Footer {
+    text-align: center;
+    color: #555454;
+    font-weight: lighter;
+    height: 90%;
+    width: 100%;
+    margin-top: 7%;
+    padding-bottom: 7px;
+    line-height: 25px;
+}
+
+footer h3 {
+    margin-top: 8%;
+    margin-bottom: -2%;
+    font-size: 17px;
+}
+
+footer p {
+    line-height: 17px;
+}
+
+#facebook,
+#instagram {
+    width: 35px;
+    margin-top: 15%;
+}
+
+#logosamarbejde1 {
+    width: 5%;
+    float: left;
+}
+
+#logosamarbejde2 {
+    width: 5%;
+    float: left;
+}
+
+
+#facebook:hover {
+    opacity: 80%;
+}
+
+#instagram:hover {
+    opacity: 80%;
+}
+
+
+/*MEDIA QUERY MOBILE */
+@media all and (max-width: 599px) {
+
+
+    /*TEKST*/
+
+
+    /* HEADER NAVIGATION*/
+
+    header {
+        display: block;
+    }
+
+
+
+    #logoweb {
+        margin-top: -30px;
+        width: 95%;
+    }
+
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+        padding: 4% 4%;
+    }
+
+    /*label er selve burgerikonet*/
+    #logo-burger label {
+        display: block;
+        font-size: 2.5em;
+        cursor: pointer;
+    }
+
+    /*Dette gør at burgermenuen folder sig ud, når man klikker på den - eller rettere sagt den checkboks som er skjult bag den*/
+    #toggle:checked + #main-nav {
+        display: block;
+        text-align: center;
+        background-color: white;
+        width: 60%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        padding-left: 6%;
+        position: absolute;
+        z-index: 1;
+        left: 40%;
+
+    }
+
+    /*Den primære navigation skjules på den lille skærm*/
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav a {
+        text-align: left;
+        line-height: 38px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /*Dette påvirker dropdown i mobilversionen, da hover ikke virker med fingeren, så nu er det hele foldet ud, border er fjernet og skriften er mindre.*/
+    #main-nav .dropdown-content a {
+        font-size: 14px;
+        border: none;
+        line-height: 26px;
+        font-weight: 400;
+
+    }
+
+    #main-nav a {
+        color: #555454;
+    }
+
+    /* Indsat af Morten */
+    .logolink {
+        display: none;
+    }
+
+    .logolink2 {
+        display: block;
+    }
+
+    main {
+        margin: 4%;
+    }
+
+
+    /*HERO IMAGE*/
+
+    #forsidetekst {
+        top:50%;
+        left: 50%;
+    }
+
+
+    #forsidetekst h2 {
+        font-size: 17px;
+    }
+
+
+    #aktivitettekst1 {
+        margin-top: -10%;
+    }
+
+
+    .tekst {
+        top: 15%;
+        left: 50%;
+    }
+
+    /*KNAPPER*/
+
+    .button2 {
+        border: none;
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 3px;
+        width: 50%;
+    }
+
+    .flexboxknap {
+        display: flex;
+        margin-top: 2%;
+    }
+
+    .knap1 {
+        width: 100%;
+    }
+
+    .book {
+        margin-top: 4%;
+        margin-left: 6%;
+    }
+
+    .book1 {
+        width: 35%;
+        margin-top: 11px;
+        display: block;
+        margin: auto;
+    }
+
+    .flexboxlasmere {
+        display: flex;
+        width: 100%;
+    }
+
+
+    /*GRA BOKSE*/
+
+    .graboks2 h4 {
+        font-size: 15px;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    .graboks2 {
+        display: flex;
+    }
+
+    .graboks1 {
+        margin-bottom: 5%;
+    }
+
+    .graboks2 {
+        margin-bottom: 5%;
+        padding: 5%;
+    }
+
+    .graboks2 img {
+        width: 97%;
+    }
+
+
+    /*4 BOKSE FORSIDE*/
+
+    .flexbox1 > div {
+        width: 49%;
+    }
+
+    .flexbox1 img {
+        width: 98%;
+    }
+
+    .flexbox1 {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .billedeforside {
+        padding: 1%
+    }
+
+    .billedeforside h4 {
+        font-size: 18px;
+        padding-right: 10%;
+        margin: auto;
+        margin-bottom: -7px;
+        padding-top: 7%
+    }
+
+    .billedeforside p {
+        font-size: 16px;
+        padding-right: 10%;
+    }
+
+
+    /*6 BOKSE AKTIVITETER*/
+
+    .flexbox2 > div {
+        width: 50%;
+    }
+
+    .forsidetekstp {
+        margin-right: 2%;
+    }
+
+    /*prisbokse*/
+
+    .prperson {
+        width: 50%;
+    }
+
+
+    /*IKONER TIL AKTIVITETER*/
+
+
+    .ikonflexbox img {
+        width: 7%;
+        height: 5%;
+        margin-top: 4%;
+    }
+
+    .ikonflexbox {
+        margin-bottom: -15px;
+    }
+
+
+    .ikonerpris {
+        width: 8%;
+        margin-bottom: -2.5px;
+        margin-right: 26.5px;
+    }
+
+    .ikonerpris1 {
+        width: 10%;
+        margin-bottom: -8px;
+        margin-right: 23px;
+    }
+
+    .ikonerpris2 {
+        width: 8%;
+        margin-bottom: -4px;
+        margin-right: 29px;
+    }
+
+    .svaer {
+        width: 12%;
+        margin-bottom: -16px;
+        margin-right: 17px;
+    }
+
+
+    .RTanbefaler h4 {
+        font-size: 19px;
+        margin-bottom: -15px;
+    }
+
+    .RTanbefaler {
+        margin-bottom: 6%;
+    }
+
+
+    .rasmusanbefaler {
+        margin-top: 20%;
+    }
+
+    /*UDFORSK SIDE*/
+
+    article {
+        padding-right: 2%;
+        line-height: 30px;
+    }
+
+
+    article p {
+        line-height: 27px;
+    }
+
+    article h3 {
+        font-size: 18px;
+        margin-top: 10%;
+    }
+
+
+    #infoflexbox {
+        margin-top: 15%;
+    }
+
+    #infoflexbox div {
+        width: 49%;
+    }
+
+    #info {
+        margin-left: -1%;
+
+    }
+    
+     .hintertux, .hg {
+        margin-top: -2%;
+    }
+    
+   
+    
+    .gletscher {
+        margin-top: -1%;
+        margin-bottom: 7%;
+    }
+    
+    .hg, .gletscher, .hintertux {
+        font-size: 15px;
+       
+    }
+
+    
+
+    /*PIL OP*/
+
+    .pilop {
+        width: 8%;
+    }
+
+    .graboks2 {
+        display: none;
+    }
+
+
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    main {
+        padding: 0% 8%
+    }
+
+
+    /*BANNER TOP*/
+
+    .mini-banner p {
+        font-size: 15px;
+        padding: 1% 3%;
+    }
+
+    .mini-banner {
+        opacity: 90%;
+
+    }
+
+    /*TEKST*/
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .h1forside {
+        padding: 1%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+
+    /*HEADER NAVIGATION*/
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #main-nav {
+        justify-content: space-evenly;
+        min-width: 50%;
+        margin: 0;
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+        font-weight: 600;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /*Dette fjerner burgermenu ikonet*/
+    label {
+        display: none;
+    }
+
+    /*Dropdown*/
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        text-decoration: none;
+        padding: 10%;
+    }
+
+    #main-nav .dropdown-content a {
+        font-size: 15px;
+        padding-left: 6%;
+        color: #4d4d4d;
+        font-weight: 500;
+    }
+
+    #main-nav .dropdown-content a:hover {
+        color: #92c4d6;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    /* INDSAT AF MORTEN */
+
+    .logolink2 {
+        display: none;
+    }
+
+    #webforside {
+        display: flex;
+    }
+
+
+    /*HERO IMAGE*/
+
+    #forsidetekst {
+        top: 57%;
+        left: 47.5%;
+    }
+
+
+    #forsidetekst h2 {
+        font-size: 20px;
+    }
+
+    #forsidetekst h1 {
+        font-size: 45px;
+    }
+
+    .teksthvid {
+        color: white;
+    }
+
+
+    /*INDSAT AF MORTEN*/
+
+    .moab {
+        height: 600px;
+        background-image: url(../images/hey.jpg);
+        /* Prøv at ændre "cover" til "100% 100%" */
+        /* Det vil gøre billedet responsivt */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    .moab1 {
+        height: 600px;
+        background-image: url(../images/aktivitetweb.jpg);
+        /* Prøv at ændre "cover" til "100% 100%" */
+        /* Det vil gøre billedet responsivt */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .moab2 {
+        height: 600px;
+        background-image: url(../images/hikingweb.jpg);
+        /* Prøv at ændre "cover" til "100% 100%" */
+        /* Det vil gøre billedet responsivt */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .moab3 {
+        height: 600px;
+        background-image: url(../images/udforskforside.png);
+        /* Prøv at ændre "cover" til "100% 100%" */
+        /* Det vil gøre billedet responsivt */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .moab4 {
+    height: 600px;
+    background-image: url(../images/udforsksite.jpg);
+    /* Prøv at ændre "cover" til "100% 100%" */
+    /* Det vil gøre billedet responsivt */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+    /*4 BOKSE FORSIDE*/
+
+    .flexbox1 > div {
+        width: 25%;
+        padding-top: 1%;
+    }
+
+    .flexbox1 img {
+        width: 98%;
+    }
+
+    .billedeforside h4 {
+        font-size: 20px;
+        margin-bottom: -10px;
+        margin-top: 2%;
+    }
+
+    .billedeforside p {
+        font-size: 16px;
+        padding-right: 10%;
+    }
+
+    .billedeforside img:hover {
+        opacity: 85%;
+    }
+
+
+    /*6 BOKSE AKTIVITETER*/
+
+    .flexbox2 > div {
+        width: 33%;
+    }
+
+    .flexbox2 img {
+        width: 97%;
+    }
+
+
+    /*OM MIG SIDE*/
+
+    #flexboxommig {
+        display: flex;
+    }
+
+    .aktivitetoverskrifter h4 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #rasmus1 {
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    #rasmushauskov {
+        display: flex;
+    }
+
+    #rasmushauskov img {
+        width: 98%;
+    }
+
+    /*GRÅ BOKSE*/
+
+    .graboks1 {
+        width: 80%;
+        margin-right: 4%;
+        padding: 4% 7%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+    
+    .graboks1 h2 {
+        font-size: 35px;
+    }
+
+
+    .graboks2 {
+        width: 20%;
+        margin-top: 4%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        margin-bottom: 4%;
+    }
+
+    .graboks2 img {
+        width: 70%;
+        display: block;
+        margin: auto;
+
+    }
+
+    .graboks2 h2 {
+        text-align: center;
+        font-size: 19px;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+
+    .graboksforside:hover {
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    #graflex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #graflex div {
+        width: 49%;
+
+    }
+
+    .grabokshiking:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    }
+
+    .graboksforside {
+        padding: 5% 7%;
+        margin-top: 4%;
+        margin-bottom: 10%;
+        margin-right: 1%;
+    }
+
+    /*KNAPPER*/
+
+    .button2 {
+        margin-bottom: 25%;
+    }
+
+    .book {
+        width: 125px;
+        margin-right: 4%;
+        padding-top: 1.2%;
+    }
+
+
+    /*FORSIDE VIDEO*/
+
+    #forsidevideo {
+        width: 98.5%;
+        display: block;
+        margin: auto;
+        padding: 5% 0%;
+    }
+
+
+    /*VEJR API*/
+
+    .vejroverskrift {
+        margin: 1%;
+        font-size: 20px;
+    }
+
+    .vejroverskrift1 {
+        margin: 1%;
+        font-size: 30px;
+    }
+
+
+    .flexcontainer > div {
+        width: 24%;
+    }
+
+    #temp,
+    #temp1,
+    #temp2,
+    #temp3 {
+
+        font-size: 45px;
+    }
+
+
+
+    /*HIKING SIDE*/
+
+
+    #flexboxhiking {
+        display: flex;
+        padding-bottom: 7%;
+    }
+
+    #flexboxhiking div {
+        width: 32%;
+    }
+
+    .grabokshiking {
+        padding: 2%;
+        background-color: #f3f3f3;
+        margin-right: 1%;
+    }
+
+
+
+    /*RASMUS TOURS ANBEFALER*/
+
+    .RTanbefaler {
+        display: flex;
+    }
+
+    .grabokshiking h4 {
+        font-size: 19px;
+    }
+
+    .by {
+        margin-top: -24px;
+        padding-bottom: 5%;
+    }
+
+    .ikonflexbox img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .ikonflexbox {
+        margin-bottom: -13px;
+    }
+
+    .ikonerpris {
+        margin-right: 12%;
+        margin-top: 8%;
+    }
+
+
+    .flexikoner {
+        display: flex;
+    }
+
+    .flexikoner div {
+        width: 50%;
+    }
+
+    /*UDFORSK*/
+
+    #udforskmain {
+        padding: 0% 12%;
+    }
+
+    #infoflexbox {
+        display: flex;
+        padding: 3% 0%;
+    }
+
+    #infoflexbox div {
+        width: 25%;
+    }
+
+    article h3 {
+        padding-top: 2%;
+    }
+
+    #info {
+        margin-left: -1%;
+        margin-bottom: 2%;
+    }
+      .hintertux {
+        margin-top: -2%;
+    }
+    
+    .gletscher {
+        margin-top: -4%;
+        margin-bottom: 4%;
+    }
+    
+    .hg, .gletscher, .hintertux {
+        font-size: 16px;
+       
+    }
+
+
+
+
+    /*PRIS BOKSE*/
+
+    .pris {
+        height: 55px;
+    }
+
+
+    .prisboks {
+        width: 98.5%
+    }
+
+
+    /*PIL OP*/
+
+    .pilop {
+        width: 3.5%;
+    }
+
+    /*FOOTER*/
+
+    .footersection {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        margin-top: 4%;
+    }
+
+    footer p,
+    h3 {
+        text-align: left;
+    }
+
+    footer p {
+        line-height: 15px;
+    }
+}
